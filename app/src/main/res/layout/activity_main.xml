@@ -47,13 +47,42 @@
 
     <TextView
         android:id="@+id/result1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="128dp"
-        android:gravity="center_horizontal"
+        android:layout_width="45dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
         android:text="0"
         android:textColor="@color/teal_700"
         app:layout_constraintStart_toStartOf="@+id/calculate"
         app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:autoText="false"
+        android:backgroundTint="#009688"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPersonName"
+        android:outlineProvider="none"
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textColorHint="#009688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result1" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 </androidx.constraintlayout.widget.ConstraintLayout>
